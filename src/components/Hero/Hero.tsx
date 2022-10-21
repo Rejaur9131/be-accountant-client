@@ -19,7 +19,7 @@ const Hero = () => {
           <p className='pt-4 pb-8 text-xl'>Be Accountant</p>
           <h1 className='text-7xl font-bold'>
             Accountant Services <br />
-            <span className='text-neutral'>and</span> Tax Optimization
+            <span className='text-black'>and</span> Tax Optimization
           </h1>
           <img
             src='https://beantown.website/html/be/html/content/accountant4/images/accountant4-slider-icon.svg'
