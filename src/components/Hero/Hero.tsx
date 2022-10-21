@@ -1,26 +1,41 @@
 import React from 'react';
+import HeroCard from './HeroCard';
 
 const Hero = () => {
   return (
     <div
-      className='hero min-h-screen bg-red-500'
+      className='hero min-h-screen bg-red-600'
       style={{
         backgroundImage: `url("https://beantown.website/html/be/html/content/accountant4/images/accountan4-section-bg1.png")`,
       }}
     >
-      <div className='hero-content flex-col lg:flex-row-reverse'>
+      <div className='hero-content items-start flex-col lg:flex-row-reverse'>
         <img
           src='https://beantown.website/html/be/html/content/accountant4/images/accountant4-slider-pic3.webp'
-          className='max-w-md mt-2'
+          className='max-w-md'
+          alt=''
         />
-        <div className='text-white'>
-          <h1 className='text-5xl font-bold'>Box Office News!</h1>
-          <p className='py-6'>
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-          <button className='btn btn-primary'>Get Started</button>
+        <div className='text-white text-left'>
+          <p className='pt-4 pb-8 text-xl'>Be Accountant</p>
+          <h1 className='text-7xl font-bold'>
+            Accountant Services <br />
+            <span className='text-neutral'>and</span> Tax Optimization
+          </h1>
+          <img
+            src='https://beantown.website/html/be/html/content/accountant4/images/accountant4-slider-icon.svg'
+            className='py-12'
+            alt=''
+          />
+          <div className='flex gap-8'>
+            <HeroCard
+              customerType='Individual Customers'
+              image='https://beantown.website/html/be/html/content/accountant4/images/accountan4-faq-pic2.webp'
+            ></HeroCard>
+            <HeroCard
+              customerType='Business Customers'
+              image='https://beantown.website/html/be/html/content/accountant4/images/accountan4-faq-pic3.webp'
+            ></HeroCard>
+          </div>
         </div>
       </div>
     </div>
